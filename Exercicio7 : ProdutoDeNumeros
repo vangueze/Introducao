@@ -1,0 +1,27 @@
+/* Faca um algoritmo que receba tres numeros,
+calcule e mostre a multiplicacao desses numeros */
+
+import java.util.Scanner;
+
+  public class Exercicio7{
+    public static void main(String[]args){
+
+    Scanner s = new Scanner (System.in);
+
+    float num1, num2, num3;
+    double produto = 0;
+
+    System.out.println("Introduza o 1o numero : ");
+    num1 = s.nextFloat();
+
+    System.out.println("Introduza o 2o numero : ");
+    num2 = s.nextFloat();
+
+    System.out.println("Introduza o 3o numero : ");
+    num3 = s.nextFloat();
+
+    produto = num1 * num2 * num3;
+
+    System.out.println("Produto = "+produto);
+  }
+}
