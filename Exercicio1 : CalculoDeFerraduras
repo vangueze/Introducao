@@ -1,0 +1,20 @@
+/* Faca um algoritmo para calcular quantas ferraduras sao necessarias 
+para equipar todos os cavalos comprados para um haras */
+
+import java.util.Scanner;
+
+  public class Exercicio1{
+    public static void main(String[]args){
+
+    Scanner s = new Scanner(System.in);
+
+    int qtdCavalos, qtdFerraduras = 0;
+
+    System.out.println("Introduza a quantidade de cavalos : ");
+    qtdCavalos = s.nextInt();
+
+    qtdFerraduras = qtdCavalos * 4;
+
+    System.out.println("Sao necessarias "+qtdFerraduras+" ferraduras para "+qtdCavalos+" cavalos ");
+  }
+}
