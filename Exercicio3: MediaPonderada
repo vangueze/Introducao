@@ -1,0 +1,28 @@
+/* Faca um algoritmo para ler tres notas de um aluno
+em uma disciplina e imprimir a sua media ponderada.
+As notas tem pesos respectivos de 1, 2 e 3. */
+
+import java.util.Scanner;
+
+  public class Exercicio3{
+    public static void main(String[]args){
+
+    Scanner s = new Scanner (System.in);
+
+    float nota1, nota2, nota3;
+    double media = 0;
+
+    System.out.println("Introduza a 1a nota : ");
+    nota1 = s.nextFloat();
+
+    System.out.println("Introduza a 2a nota : ");
+    nota2 = s.nextFloat();
+
+    System.out.println("Introduza a 3a nota : ");
+    nota3 = s.nextFloat();
+
+    media = (nota1 + nota2*2 + nota3*3) / 3;
+
+    System.out.println("1a nota = "+nota1+"\n2a nota = "+nota2+"\n3a nota = "+nota3+"\nMedia ponderada = "+media);
+  }
+}
