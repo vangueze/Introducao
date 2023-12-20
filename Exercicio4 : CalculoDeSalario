@@ -1,0 +1,25 @@
+/* Faca um algoritmo para ler o salario de um funcionario
+e aumenta-lo em 15%. Apos o aumento, desconte 8% de 
+impostos. Imprima o salario inicial, o salario com o 
+aumento, e o salario final. */
+
+import java.util.Scanner;
+
+  public class Exercicio4{
+    public static void main(String[]args){
+
+    Scanner s = new Scanner(System.in);
+
+    float salarioInicial;
+    double salarioAcrescido = 0, salarioFinal = 0;
+
+    System.out.println("Introduza o salario do funcionario : ");
+    salarioInicial = s.nextFloat();
+
+    salarioAcrescido = salarioInicial + salarioInicial*0.15;
+    salarioFinal = salarioAcrescido - salarioAcrescido*0.08;
+
+    System.out.println("Salario inicial = "+salarioInicial+"\nSalario com aumento = "+salarioAcrescido+"\nSalario final = "+salarioFinal);
+  }
+}
+
