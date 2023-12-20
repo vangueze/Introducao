@@ -1,0 +1,31 @@
+/* Um motorista deseja colocar X meticais de combustivel
+no tanque do seu veiculo. Escreva um algoritmo para ler
+o preco por litro do combustivel desejado e o valor de
+pagamento, e exibir quantos litros ele conseguiu colocar 
+no tanque */
+
+import java.util.Scanner;
+
+  public class Main{
+    public static void main(String[]args){
+
+    Scanner s = new Scanner (System.in);
+
+    float precoCombustivel, valorPagamento, qtdLitros = 0;
+
+    System.out.println("Introduza o preco do combustivel : ");
+    precoCombustivel = s.nextFloat();
+
+    System.out.println("Introduza o valor a pagar pelo combustivel : ");
+    valorPagamento = s.nextFloat();
+
+    qtdLitros = valorPagamento / precoCombustivel;
+
+    System.out.println("***********************************************");
+    System.out.println("******************Recibo***********************");
+    System.out.println("***Preco por litro    : "+precoCombustivel+"***");
+    System.out.println("***Valor a pagar      : "+valorPagamento+"*****");
+    System.out.println("***Litros abastecidos : "+qtdLitros+"**********");
+    System.out.println("***********************************************");
+  }
+}
