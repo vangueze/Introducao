@@ -1,1 +1,37 @@
+/* A empresa Hipotheticus paga 100 meticais por hora 
+normal trabalhada, e 150 meticais por hora extra. 
+Faca um algoritmo para calcular e imprimir o salario
+bruto e o salario liquido de um determinado funcionario.
+Considere que o salario liquido eh igual ao salario bruto
+descontando-se 10% de impostos. */
+
+import java.util.Scanner;
+
+  public class Exericico6{
+    public static void main(String[]args){
+
+    Scanner s = new Scanner(System.in);
+
+    double salarioBruto = 0, salarioLiquido = 0;
+    int horasNormais, horasExtras;
+
+    System.out.println("Introduza as horas normais de trabalho : ");
+    horasNormais = s.nextInt();
+
+    System.out.println("Introduza as horas extras : ");
+    horasExtras = s.nextInt();
+
+    salarioBruto = horasNormais*100 + horasExtras*150;
+    salarioLiquido = salarioBruto - salarioBruto*0.1;
+
+    System.out.println("Salario bruto = "+salarioBruto+"\nSalario liquido = "+salarioLiquido);
+  }
+}
+    
+
+
+
+
+
+
 
