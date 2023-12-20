@@ -1,0 +1,20 @@
+/* Crie um algoritmo que receba a temperatura em
+Celsius e faca a conversao para Fahrenheit */
+
+import java.util.Scanner;
+
+  public class Exercicio5{
+    public static void main(String[]args){
+
+    Scanner s = new Scanner (System.in);
+
+    float celsius, fahrenheit = 0;
+
+    System.out.println("Introduza a temperatura em Celsius : ");
+    celsius = s.nextFloat();
+
+    fahrenheit = ((celsius * 9) / 5) + 32;
+
+    System.out.println(celsius+" graus Celsius equivale a "+fahrenheit+" graus Fahrenheit");
+  }
+}
